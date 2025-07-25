@@ -1,4 +1,4 @@
-# Angular V20 File Refactor
+# Angular v20 File Refactor
 
 A CLI tool to automate file renaming and content refactoring for Angular 20 projects. This tool updates file names and TypeScript file contents to align with Angular 20 conventions, handling patterns like `.component`, `.service`, `.directive`, and `.model`.
 
@@ -86,6 +86,10 @@ npx angular-v20-file-refactor D:\\Estee\\Programming\\My-Projects\\angular-app\\
 # Using package.json script
 npm run refactor -- D:\\Estee\\Programming\\My-Projects\\angular-app\\src\\app --skip-dirs models,tests --replace-file-name-segments services,pipes --remove-file-name-segments models,utils
 ```
+
+## Compatibility
+
+This tool has been tested on Windows and works reliably. I’d love to hear how it performs on other operating systems like macOS or Linux! Please share your experience or report issues at [github.com/esthersoftwaredev/angular-v20-file-refactor/issues](github.com/esthersoftwaredev/angular-v20-file-refactor/issues).
 
 ## License
 
