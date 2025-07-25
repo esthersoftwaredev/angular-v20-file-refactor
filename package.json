@@ -1,0 +1,32 @@
+{
+  "name": "angular-v20-file-refactor",
+  "version": "1.0.0",
+  "description": "A CLI tool to automate file renaming and content refactoring for Angular 20 projects",
+  "main": "index.js",
+  "bin": {
+    "angular-v20-file-refactor": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js"
+  },
+  "keywords": [
+    "angular",
+    "refactor",
+    "migration",
+    "file-rename",
+    "angular-v20"
+  ],
+  "author": "Esther White <esthersoftwaredev@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esthersoftwaredev/angular-v20-file-refactor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/esthersoftwaredev/angular-v20-file-refactor/issues"
+  },
+  "homepage": "https://github.com/esthersoftwaredev/angular-v20-file-refactor#readme",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
