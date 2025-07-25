@@ -8,8 +8,8 @@ program
   .description('CLI tool to refactor Angular 20 project files by renaming and updating contents')
   .argument('<projectPath>', 'Path to the Angular project folder')
   .option('-s, --skip-dirs <dirs>', 'Comma-separated list of directories to skip', 'models,partials')
-  .option('--replace-file-segments <segments>', 'Comma-separated list of file segments to replace (e.g., services,directives)', 'services,directives')
-  .option('--remove-file-segments <segments>', 'Comma-separated list of file segments to remove (e.g., models)', 'models')
+  .option('--replace-file-name-segments <segments>', 'Comma-separated list of file segments to replace (e.g., services,directives)', 'services,directives')
+  .option('--remove-file-name-segments <segments>', 'Comma-separated list of file segments to remove (e.g., models)', 'models')
   .option('--replace-import-segments <segments>', 'Comma-separated list of import segments to replace (e.g., .service)', '.service')
   .option('--remove-import-segments <segments>', 'Comma-separated list of import segments to remove (e.g., .component,.directive,.model)', '.component,.directive,.model')
   .action((projectPath, options) => {
@@ -17,8 +17,8 @@ program
     const args = [
       projectPath,
       '--skip-dirs', options.skipDirs,
-      '--replace-file-name-segments', options.replaceFileSegments,
-      '--remove-file-name-segments', options.removeFileSegments,
+      '--replace-file-name-segments', options.replaceFileNameSegments,
+      '--remove-file-name-segments', options.removeFileNameSegments,
       '--replace-import-segments', options.replaceImportSegments,
       '--remove-import-segments', options.removeImportSegments
     ];
