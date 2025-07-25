@@ -80,7 +80,10 @@ Run the tool on a specific Angular project folder with custom options:
 # Global installation
 angular-v20-file-refactor D:\\Estee\\Programming\\My-Projects\\angular-app\\src\\app --skip-dirs models,tests --replace-file-name-segments services,pipes --remove-file-name-segments models,utils
 
-# Local installation
+# Local installation with default options
+npx angular-v20-file-refactor D:\\Estee\\Programming\\My-Projects\\angular-app\\src\\app --skip-dirs models,partials --replace-file-name-segments services,directives --remove-file-name-segments models --replace-import-segments .service --remove-import-segments .component,.directive,.model
+
+# Local installation with custom options
 npx angular-v20-file-refactor D:\\Estee\\Programming\\My-Projects\\angular-app\\src\\app --skip-dirs models,tests --replace-file-name-segments services,pipes --remove-file-name-segments models,utils
 
 # Using package.json script
