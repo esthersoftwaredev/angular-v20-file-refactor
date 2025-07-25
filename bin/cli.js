@@ -17,8 +17,8 @@ program
     const args = [
       projectPath,
       '--skip-dirs', options.skipDirs,
-      '--replace-file-segments', options.replaceFileSegments,
-      '--remove-file-segments', options.removeFileSegments,
+      '--replace-file-name-segments', options.replaceFileSegments,
+      '--remove-file-name-segments', options.removeFileSegments,
       '--replace-import-segments', options.replaceImportSegments,
       '--remove-import-segments', options.removeImportSegments
     ];
