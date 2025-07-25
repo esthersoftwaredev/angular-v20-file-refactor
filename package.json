@@ -1,6 +1,6 @@
 {
   "name": "angular-v20-file-refactor",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A CLI tool to automate file renaming and TypeScript refactoring for Angular 20 projects, aligning with conventions for components, services, directives, models, and standalone components.",
   "keywords": [
     "angular",
@@ -13,12 +13,12 @@
     "typescript",
     "cli",
     "update",
+    "migration-tool",
     "file-rename",
     "file-refactor",
     "angular-cli",
     "angular-refactoring",
-    "angular-upgrade",
-    "standalone-components"
+    "standalone"
   ],
   "license": "MIT",
   "author": "Esther White <esthersoftwaredev@gmail.com>[](https://github.com/esthersoftwaredev)",
