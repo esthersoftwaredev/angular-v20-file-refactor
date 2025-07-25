@@ -92,7 +92,9 @@ npm run refactor -- D:\\Estee\\Programming\\My-Projects\\angular-app\\src\\app -
 
 ## Compatibility
 
-This tool has been tested on Windows and works reliably. I’d love to hear how it performs on other operating systems like macOS or Linux! Please share your experience or report issues at [github.com/esthersoftwaredev/angular-v20-file-refactor/issues](github.com/esthersoftwaredev/angular-v20-file-refactor/issues).
+## Compatibility
+
+This tool has been tested on Windows and works reliably. A Linux binary is included but hasn’t been fully tested yet. I’d love to hear how it performs on Linux or macOS! Please share your experience or report issues at [github.com/esthersoftwaredev/angular-v20-file-refactor/issues](github.com/esthersoftwaredev/angular-v20-file-refactor/issues).
 
 ## License
 

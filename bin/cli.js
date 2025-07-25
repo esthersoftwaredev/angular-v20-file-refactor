@@ -4,7 +4,7 @@ const { execFile } = require('child_process');
 const path = require('path');
 
 program
-  .version('1.0.0')
+  .version('1.0.8')
   .description('CLI tool to refactor Angular 20 project files by renaming and updating contents')
   .argument('<projectPath>', 'Path to the Angular project folder')
   .option('-s, --skip-dirs <dirs>', 'Comma-separated list of directories to skip', 'models,partials')
@@ -13,7 +13,23 @@ program
   .option('--replace-import-segments <segments>', 'Comma-separated list of import segments to replace (e.g., .service)', '.service')
   .option('--remove-import-segments <segments>', 'Comma-separated list of import segments to remove (e.g., .component,.directive,.model)', '.component,.directive,.model')
   .action((projectPath, options) => {
-    const binaryPath = path.join(__dirname, 'angular-v20-file-refactor');
+    let binaryName;
+    switch (process.platform) {
+      case 'win32':
+        binaryName = 'angular-v20-file-refactor'; // Resolves to .exe on Windows
+        break;
+      case 'darwin':
+        binaryName = 'angular-v20-file-refactor-darwin';
+        break;
+      case 'linux':
+        binaryName = 'angular-v20-file-refactor-linux';
+        break;
+      default:
+        console.error(`Unsupported platform: ${process.platform}`);
+        process.exit(1);
+    }
+
+    const binaryPath = path.join(__dirname, binaryName);
     const args = [
       projectPath,
       '--skip-dirs', options.skipDirs,
