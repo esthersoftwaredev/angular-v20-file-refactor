@@ -1,6 +1,6 @@
 {
   "name": "angular-v20-file-refactor",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A CLI tool to automate file renaming and TypeScript refactoring for Angular 20 projects, aligning with conventions for components, services, directives, models, and standalone components.",
   "keywords": [
     "angular",
@@ -34,5 +34,8 @@
     "bin/cli.js",
     "bin/angular-v20-file-refactor.exe",
     "bin/angular-v20-file-refactor-linux"
-  ]
+  ],
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
 }
