@@ -109,3 +109,13 @@ Esther White [esthersoftwaredev](https://github.com/esthersoftwaredev)
 ## Issues
 
 Report bugs or suggest improvements at [github.com/esthersoftwaredev/angular-v20-file-refactor/issues](https://github.com/esthersoftwaredev/angular-v20-file-refactor/issues).
+
+## Security Measures
+
+This package includes several security features to protect users:
+- **SHA-256 Verification**: Each binary comes with a `.sha256` file containing a unique fingerprint that verifies the file hasn't been tampered with during download.
+- **GPG Signatures**: All binaries include `.asc` signature files that prove the software was created by the package author and not modified by third parties.
+- **Automated Builds**: All binaries are built using GitHub Actions automated workflows, ensuring consistent and reproducible builds without manual intervention.
+
+Read more at [keys/README.md](keys/README.md)
+
